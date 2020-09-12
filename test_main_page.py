@@ -19,7 +19,6 @@ class TestLoginFromMainPage():
         page.open()
         page.should_be_login_link()
 
-@pytest.mark.skip
 def test_login_page(browser):
     link = "http://selenium1py.pythonanywhere.com/en-gb/accounts/login/"
     page = LoginPage(browser, link)  
